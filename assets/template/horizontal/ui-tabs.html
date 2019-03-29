@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from coderthemes.com/zircos/layouts/horizontal/ui-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Mar 2019 09:35:14 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- App title -->
+        <title>Zircos - Bootstrap 4 Responsive Admin Dashboard Template</title>
+
+        <!-- App css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main navbar p-0">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="topbar-left">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                            <!--Zircos-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="" height="30">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras">
+
+                        <ul class="nav navbar-right float-right">
+                            <li class="navbar-c-items">
+                                <form role="search" class="navbar-left app-search float-left d-none d-sm-inline-block">
+                                     <input type="text" placeholder="Search..." class="form-control">
+                                     <a href="#"><i class="fa fa-search"></i></a>
+                                </form>
+                            </li>
+
+                            <li class="dropdown navbar-c-items">
+                                 <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
+                                    <i class="mdi mdi-email"></i>
+                                    <span class="badge up badge-danger badge-pill">8</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">
+                                    <li class="text-center">
+                                        <h5>Messages</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets/images/users/avatar-2.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Patricia Beach</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets/images/users/avatar-3.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Connie Lucas</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets/images/users/avatar-4.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Margaret Becker</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="all-msgs text-center">
+                                        <p class="m-0"><a href="#">See all Messages</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown navbar-c-items">
+                                 <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <span class="badge up badge-success badge-pill">4</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">
+                                    <li class="text-center">
+                                        <h5>Notifications</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-info">
+                                                <i class="mdi mdi-account"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">New Signup</span>
+                                                <span class="time">5 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-danger">
+                                                <i class="mdi mdi-comment"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">New Message received</span>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-warning">
+                                                <i class="mdi mdi-settings"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Settings</span>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="all-msgs text-center">
+                                        <p class="m-0"><a href="#">See all Notification</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown navbar-c-items">
+                                <a href="#" class="dropdown-toggle waves-effect waves-light profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="rounded-circle"> </a>
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li class="text-center">
+                                        <h5>Hi, John</h5>
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+                    <!-- end menu-extras -->
+
+                </div> <!-- end container-fluid -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="index.html">Dashboard 01</a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_2.html">Dashboard 02</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-layers"></i>UI Kit</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span>Components</span>
+                                            </li>
+                                            <li><a href="ui-buttons.html">Buttons</a></li>
+                                            <li><a href="ui-typography.html">Typography</a></li>
+                                            <li><a href="ui-card.html">Card</a></li>
+                                            <li><a href="ui-portlets.html">Portlets</a></li>
+                                            <li><a href="ui-modals.html">Modals</a></li>
+                                            <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
+                                            <li><a href="ui-tabs.html">Tabs</a></li>
+                                            <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span>Components</span>
+                                            </li>
+                                            <li><a href="ui-notifications.html">Notification</a></li>
+                                            <li><a href="ui-alerts.html">Alerts</a>
+                                            <li><a href="ui-carousel.html">Carousel</a>
+                                            <li><a href="ui-video.html">Video</a>
+                                            <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
+                                            <li><a href="ui-images.html">Images</a></li>
+                                            <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                            <li><a href="ui-grid.html">Grid</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <span>Admin UI</span>
+                                            </li>
+                                            <li><a href="admin-sweet-alert2.html">Sweet Alert 2</a></li>
+                                            <li><a href="admin-widgets.html">Widgets</a></li>
+                                            <li><a href="admin-nestable.html">Nestable List</a></li>
+                                            <li><a href="admin-rangeslider.html">Range Slider</a></li>
+                                            <li><a href="admin-ratings.html">Ratings</a></li>
+                                            <li><a href="admin-animation.html">Animation</a></li>
+                                            <li><a href="admin-calendar.html">Calendar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-diamond-stone"></i>Components</a>
+                                <ul class="submenu">
+                                    <li class="has-submenu">
+                                        <a href="#">Forms</a>
+                                        <ul class="submenu">
+                                            <li><a href="form-elements.html">Form Elements</a></li>
+                                            <li><a href="form-advanced.html">Form Advanced</a></li>
+                                            <li><a href="form-validation.html">Form Validation</a></li>
+                                            <li><a href="form-pickers.html">Form Pickers</a></li>
+                                            <li><a href="form-wizard.html">Form Wizard</a></li>
+                                            <li><a href="form-mask.html">Form Masks</a></li>
+                                            <li><a href="form-summernote.html">Summernote</a></li>
+                                            <li><a href="form-wysiwig.html">Wysiwig Editors</a></li>
+                                            <li><a href="form-uploads.html">Multiple File Upload</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Charts</a>
+                                        <ul class="submenu">
+                                            <li><a href="chart-flot.html">Flot Chart</a></li>
+                                            <li><a href="chart-morris.html">Morris Chart</a></li>
+                                            <li><a href="chart-google.html">Google Chart</a></li>
+                                            <li><a href="chart-chartist.html">Chartist Charts</a></li>
+                                            <li><a href="chart-chartjs.html">Chartjs Chart</a></li>
+                                            <li><a href="chart-c3.html">C3 Chart</a></li>
+                                            <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
+                                            <li><a href="chart-knob.html">Jquery Knob</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Email</a>
+                                        <ul class="submenu">
+                                            <li><a href="email-inbox.html"> Inbox</a></li>
+                                            <li><a href="email-read.html"> Read Mail</a></li>
+                                            <li><a href="email-compose.html"> Compose Mail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Icons</a>
+                                        <ul class="submenu">
+                                            <li><a href="icons-colored.html">Colored Icons</a></li>
+                                            <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                            <li><a href="icons-ionicons.html">Ion Icons</a></li>
+                                            <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                            <li><a href="icons-themifyicon.html">Themify Icons</a></li>
+                                            <li><a href="icons-typicons.html">Typicons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Tables</a>
+                                        <ul class="submenu">
+                                            <li><a href="tables-basic.html">Basic Tables</a></li>
+                                            <li><a href="tables-layouts.html">Tables Layouts</a></li>
+                                            <li><a href="tables-datatable.html">Data Table</a></li>
+                                            <li><a href="tables-responsive.html">Responsive Table</a></li>
+                                            <li><a href="tables-tablesaw.html">Tablesaw Table</a></li>
+                                            <li><a href="tables-editable.html">Editable Table</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Maps</a>
+                                        <ul class="submenu">
+                                            <li><a href="maps-google.html">Google Maps</a></li>
+                                            <li><a href="maps-vector.html">Vector Maps</a></li>
+                                            <li><a href="maps-mapael.html">Mapael Maps</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-google-pages"></i>Pages</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="page-starter.html">Starter Page</a></li>
+                                            <li><a href="page-login.html">Login</a></li>
+                                            <li><a href="page-register.html">Register</a></li>
+                                            <li><a href="page-logout.html">Logout</a></li>
+                                            <li><a href="page-recoverpw.html">Recover Password</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                                            <li><a href="page-confirm-mail.html">Confirm Mail</a></li>
+                                            <li><a href="page-404.html">Error 404</a></li>
+                                            <li><a href="page-404-alt.html">Error 404-alt</a></li>
+                                            <li><a href="page-500.html">Error 500</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-book-multiple"></i>Extras</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="extras-profile.html">Profile</a></li>
+                                            <li><a href="extras-sitemap.html">Sitemap</a></li>
+                                            <li><a href="extras-about.html">About Us</a></li>
+                                            <li><a href="extras-contact.html">Contact</a></li>
+                                            <li><a href="extras-members.html">Members</a></li>
+                                            <li><a href="extras-timeline.html">Timeline</a></li>
+                                            <li><a href="extras-invoice.html">Invoice</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="extras-search-result.html">Search Result</a></li>
+                                            <li><a href="extras-emailtemplate.html">Email Template</a></li>
+                                            <li><a href="extras-maintenance.html">Maintenance</a></li>
+                                            <li><a href="extras-coming-soon.html">Coming Soon</a></li>
+                                            <li><a href="extras-faq.html">FAQ</a></li>
+                                            <li><a href="extras-gallery.html">Gallery</a></li>
+                                            <li><a href="extras-pricing.html">Pricing</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-comment-text"></i>Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blogs-dashboard.html">Dashboard</a></li>
+                                    <li><a href="blogs-blog-list.html">Blog List</a></li>
+                                    <li><a href="blogs-blog-column.html">Blog Column</a></li>
+                                    <li><a href="blogs-blog-post.html">Blog Post</a></li>
+                                    <li><a href="blogs-blog-add.html">Add Blog</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-home-map-marker"></i>Real Estate</a>
+                                <ul class="submenu">
+                                    <li><a href="real-estate-dashboard.html">Dashboard</a></li>
+                                    <li><a href="real-estate-list.html">Property List</a></li>
+                                    <li><a href="real-estate-column.html">Property Column</a></li>
+                                    <li><a href="real-estate-detail.html">Property Detail</a></li>
+                                    <li><a href="real-estate-agents.html">Agents</a></li>
+                                    <li><a href="real-estate-profile.html">Agent Details</a></li>
+                                    <li><a href="real-estate-add.html">Add Property</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container-fluid -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <ol class="breadcrumb hide-phone float-right p-0 m-0">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Zircos</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">User interface</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Tabs
+                                </li>
+                            </ol>
+                            <h4 class="page-title">Tabs</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Default Tabs</h4>
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="message-tab" data-toggle="tab" href="#message" role="tab" aria-controls="message" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        <span class="d-none d-sm-block">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                                <div class="tab-pane" id="message" role="tabpanel" aria-labelledby="message-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end col -->
+
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Tabs Justified</h4>
+
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="home1-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="profile1-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="message1-tab" data-toggle="tab" href="#message1" role="tab" aria-controls="message1" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        <span class="d-none d-sm-block">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="setting1-tab" data-toggle="tab" href="#setting1" role="tab" aria-controls="setting" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="home1" role="tabpanel" aria-labelledby="home1-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane show active" id="profile1" role="tabpanel" aria-labelledby="profile1-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                                <div class="tab-pane" id="message1" role="tabpanel" aria-labelledby="message1-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane" id="setting1" role="tabpanel" aria-labelledby="setting1-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Left</h4>
+                            
+                            <div class="tabs-vertical-env">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link" id="v-home-tab" data-toggle="pill" href="#v-home" role="tab" aria-controls="v-home" aria-selected="false">Home</a>
+                                            <a class="nav-link active" id="v-profile-tab" data-toggle="pill" href="#v-profile" role="tab" aria-controls="v-profile" aria-selected="true">Profile</a>
+                                            <a class="nav-link" id="v-messages-tab" data-toggle="pill" href="#v-messages" role="tab" aria-controls="v-messages" aria-selected="false">Messages</a>
+                                            <a class="nav-link" id="v-settings-tab" data-toggle="pill" href="#v-settings" role="tab" aria-controls="v-settings" aria-selected="false">Settings</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="tab-content pt-0">
+                                            <div class="tab-pane" id="v-home" role="tabpanel" aria-labelledby="v-home-tab">
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                                <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                            </div>
+                                            <div class="tab-pane show active" id="v-profile" role="tabpanel" aria-labelledby="v-profile-tab">
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                            </div>
+                                            <div class="tab-pane" id="v-messages" role="tabpanel" aria-labelledby="v-messages-tab">
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                                <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                            </div>
+                                            <div class="tab-pane" id="v-settings" role="tabpanel" aria-labelledby="v-settings-tab">
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> <!-- end col -->
+
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Right</h4>
+
+                            <div class="tabs-vertical-env">
+                                <div class="row">
+                                    
+                                    <div class="col-sm-9">
+                                        <div class="tab-content pt-0">
+                                            <div class="tab-pane" id="v-home2" role="tabpanel" aria-labelledby="v-home2-tab">
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                                <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                            </div>
+                                            <div class="tab-pane show active" id="v-profile2" role="tabpanel" aria-labelledby="v-profile2-tab">
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                            </div>
+                                            <div class="tab-pane" id="v-messages2" role="tabpanel" aria-labelledby="v-messages2-tab">
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                                <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                            </div>
+                                            <div class="tab-pane" id="v-settings2" role="tabpanel" aria-labelledby="v-settings2-tab">
+                                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="nav flex-column nav-pills text-right" id="v-pills2-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link" id="v-home2-tab" data-toggle="pill" href="#v-home2" role="tab" aria-controls="v-home2" aria-selected="false">Home</a>
+                                            <a class="nav-link active" id="v-profile2-tab" data-toggle="pill" href="#v-profile2" role="tab" aria-controls="v-profile2" aria-selected="true">Profile</a>
+                                            <a class="nav-link" id="v-messages2-tab" data-toggle="pill" href="#v-messages2" role="tab" aria-controls="v-messages2" aria-selected="false">Messages</a>
+                                            <a class="nav-link" id="v-settings2-tab" data-toggle="pill" href="#v-settings2" role="tab" aria-controls="v-settings2" aria-selected="false">Settings</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Tabs Bordered</h4>
+
+                            <ul class="nav nav-tabs tabs-bordered" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="home-b1-tab" data-toggle="tab" href="#home-b1" role="tab" aria-controls="home-b1" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="profile-b1-tab" data-toggle="tab" href="#profile-b1" role="tab" aria-controls="profile-b1" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="message-b1-tab" data-toggle="tab" href="#message-b1" role="tab" aria-controls="message-b1" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        <span class="d-none d-sm-block">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="setting-b1-tab" data-toggle="tab" href="#setting-b1" role="tab" aria-controls="setting-b1" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="home-b1" role="tabpanel" aria-labelledby="home-b1-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane show active" id="profile-b1" role="tabpanel" aria-labelledby="profile-b1-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                                <div class="tab-pane" id="message-b1" role="tabpanel" aria-labelledby="message-b1-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane" id="setting-b1" role="tabpanel" aria-labelledby="setting-b1-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end col -->
+
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Tabs Bordered Justified</h4>
+
+                            <ul class="nav nav-tabs tabs-bordered nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="home-b2-tab" data-toggle="tab" href="#home-b2" role="tab" aria-controls="home-b2" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="profile-b2-tab" data-toggle="tab" href="#profile-b2" role="tab" aria-controls="profile-b2" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="message-b2-tab" data-toggle="tab" href="#message-b2" role="tab" aria-controls="message-b2" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        <span class="d-none d-sm-block">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="setting-b2-tab" data-toggle="tab" href="#setting-b2" role="tab" aria-controls="setting-b2" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="home-b2" role="tabpanel" aria-labelledby="home-b2-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane show active" id="profile-b2" role="tabpanel" aria-labelledby="profile-b2-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                                <div class="tab-pane" id="message-b2" role="tabpanel" aria-labelledby="message-b2-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                </div>
+                                <div class="tab-pane" id="setting-b2" role="tabpanel" aria-labelledby="setting-b2-tab">
+                                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-heading bg-light">
+                                <h3 class="card-title">Nav Pills Tabs</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <ul class="nav nav-pills mb-2 float-right" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="navpills-11-tab" data-toggle="pill" href="#navpills-11" role="tab" aria-controls="navpills-11" aria-selected="true">Tab One</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="navpills-21-tab" data-toggle="pill" href="#navpills-21" role="tab" aria-controls="navpills-21" aria-selected="false">Tab Two</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="navpills-31-tab" data-toggle="pill" href="#navpills-31" role="tab" aria-controls="navpills-31" aria-selected="false">Tab Three</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane show active" id="navpills-11" role="tabpanel" aria-labelledby="navpills-11-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-1.jpg" class="img-fluid mx-auto d-block img-thumbnail m-r-15" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="navpills-21" role="tabpanel" aria-labelledby="navpills-21-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Donec pede justo fringilla vel aliquet nec vulputate eget arcu in enim justo rhoncus ut imperdiet a venenatis vitae justo nullam dictum felis eu pede mollis pretium. Integer tinciduntCras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus. Aenean leo ligul porttitor eu consequat vitae eleifend ac enim donec pede justo fringilla vel aliquet nec blandit vel luctus pulvinar vulputate eget quam nunc.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-2.jpg" class="img-fluid mx-auto d-block img-thumbnail mr25" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="navpills-31" role="tabpanel" aria-labelledby="navpills-31-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-3.jpg" class="img-fluid mx-auto d-block img-thumbnail mr25" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-heading bg-light">
+                                <h3 class="card-title">Nav Pills Tabs</h3>
+                            </div>
+                            <div class="card-body">
+                                
+                                <ul class="nav nav-pills mb-2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="navpills-1-tab" data-toggle="pill" href="#navpills-1" role="tab" aria-controls="navpills-1" aria-selected="true">Tab One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navpills-2-tab" data-toggle="pill" href="#navpills-2" role="tab" aria-controls="navpills-2" aria-selected="false">Tab Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navpills-3-tab" data-toggle="pill" href="#navpills-3" role="tab" aria-controls="navpills-3" aria-selected="false">Tab Three</a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="tab-content">
+                                    <div class="tab-pane show active" id="navpills-1" role="tabpanel" aria-labelledby="navpills-1-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-1.jpg" class="img-fluid mx-auto d-block img-thumbnail m-r-15" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="navpills-2" role="tabpanel" aria-labelledby="navpills-2-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Donec pede justo fringilla vel aliquet nec vulputate eget arcu in enim justo rhoncus ut imperdiet a venenatis vitae justo nullam dictum felis eu pede mollis pretium. Integer tinciduntCras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus. Aenean leo ligul porttitor eu consequat vitae eleifend ac enim donec pede justo fringilla vel aliquet nec blandit vel luctus pulvinar vulputate eget quam nunc.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-2.jpg" class="img-fluid mx-auto d-block img-thumbnail mr25" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="navpills-3" role="tabpanel" aria-labelledby="navpills-3-tab">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p>
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/small/img-3.jpg" class="img-fluid mx-auto d-block img-thumbnail mr25" alt="tab-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- End container-fluid -->
+
+            <!-- Footer -->
+            <footer class="footer text-right">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            2016 - 2019 © Zircos <span class="d-none d-sm-inline-block"> - theme by Coderthemes.</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+            
+        </div>
+        <!-- End wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+
+<!-- Mirrored from coderthemes.com/zircos/layouts/horizontal/ui-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Mar 2019 09:35:15 GMT -->
+</html>
